@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Asteroids</title>
+</head>
+
+<body>
+  <div class="mainHeaderImg">
+    <h1 class="mainHeaderTitle">Select Asteroid Parameters</h1>
+  </div>
+  <div class="mainSubHeader">
+    <h2>This Asteroid Selector will allow you to Identify any Asteroids that Com within a Specific Distance between the Selected Dates</h2>
+  </div>
+  <div class="loginContainerDiv">
+    <div class="registerDiv">
+      <form action="/asteroid" method="post">
+        <label for="startDate">Starting Date</label>
+        <input type="date" name="startDate" value="2022-01-01">
+        <br>
+        <label for="endDate">Ending Date</label>
+        <input type="date" name="endDate" value="2022-01-10">
+        <br>
+        <label for="distance">Distance in AU</label>
+        <input type="text" name="distance">
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

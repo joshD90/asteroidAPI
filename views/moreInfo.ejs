@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/styles.css">
+  <title>More Info</title>
+</head>
+
+<body>
+  <div class="mainHeaderImg">
+    <h1 class="mainHeaderTitle">Asteroid Stats: <%= asteroidData[0] %></h1>
+  </div>
+  <div class="moreInfoContainerDiv">
+    <div class="moreInfoStats">
+      <h3>Raw Stats on Asteroid</h3>
+      <div class="moreInfoFieldDiv">
+        <% asteroidField.forEach(element => { %>
+        <p><%= element %></p>
+        <% }) %>
+      </div>
+      <div class="moreInfoDataDiv">
+        <% asteroidData.forEach(element => { %>
+        <p><%= element %></p>
+        <% }) %>
+      </div>
+    </div>
+
+
+    <div class="moreInfoImage">
+      <form action="/impact" method="get">
+        <button type="submit" class="moreInfoBtn">Impact with Earth</button>
+      </form>
+
+    </div>
+    <div class="moreInfoCalc">
+      <p>Estimated Diameter: <%= diameter %> metres</p>
+      <p>Estimated Mass: <%= mass %> Kgs</p>
+      <p>Estimated Impact Energy: <%= kineticEnergy %> joules</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
